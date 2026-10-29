@@ -26,9 +26,9 @@ def matching_div_end(doc, start):
 
 
 # Head: title, meta description, robots, styles
-TITLE = "Professional Salon Shampoo Brands | Beauty Plus Salon"
-META = ("Shop 1,100+ salon shampoos from Redken, Pureology, Biolage, Matrix and more. "
-        "Color-safe, sulfate-free and purple formulas. Free U.S. shipping from $59.")
+TITLE = "Salon Shampoo Brands for Every Hair Type | Beauty Plus Salon"
+META = ("Find high-quality, professional shampoo options at Beauty Plus Salon where we offer "
+        "some of your favorite salon-grade shampoos at affordable prices.")
 h = re.sub(r"<title>.*?</title>", f"<title>{TITLE}</title>", h, count=1, flags=re.S)
 h = re.sub(r'<meta name="description"[^>]*>', f'<meta name="description" content="{META}">\n<meta name="robots" content="noindex, nofollow">', h, count=1)
 h = re.sub(r'<link[^>]+href="[^"]*/css/styles\.css"[^>]*>',
