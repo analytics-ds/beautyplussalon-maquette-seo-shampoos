@@ -35,7 +35,13 @@
 .seo-list { list-style: disc; padding-left: 1.25rem; margin: 0 0 .75rem; }
 .seo-list li { margin-bottom: .35rem; }
 .seo-list strong, .seo-bottom p strong { color: rgb(17 24 39); }
-.seo-faq details { border-bottom: 1px solid rgb(229 231 235); padding: .85rem 0; }
+.seo-table-wrap { overflow-x: auto; margin: .25rem 0 1rem; }
+.seo-table { width: 100%; border-collapse: collapse; font-size: .9rem; line-height: 1.35rem; }
+.seo-table th { background: #000; color: #fff; text-align: left; font-weight: 700; padding: .6rem .75rem; white-space: nowrap; }
+.seo-table td { border-bottom: 1px solid rgb(229 231 235); padding: .6rem .75rem; vertical-align: top; }
+.seo-table td:first-child { font-weight: 700; color: rgb(17 24 39); }
+.seo-table tbody tr:nth-child(even) td { background: rgb(249 250 251); }
+.seo-faq details {border-bottom: 1px solid rgb(229 231 235); padding: .85rem 0; }
 .seo-faq summary { cursor: pointer; font-weight: 700; color: rgb(17 24 39); list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
 .seo-faq summary::-webkit-details-marker { display: none; }
 .seo-faq summary::after { content: "+"; color: #ED1A75; font-size: 1.25rem; line-height: 1; }

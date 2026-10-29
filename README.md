@@ -7,7 +7,7 @@ Modifications par rapport à la page live :
 - Intro courte et visible (3 lignes) à la place du texte de 860 mots caché sous un « show more »
 - Bloc de maillage vers les 12 principales marques de shampoing
 - Noms de produits sortis des H2 (32 H2 sur la page live)
-- Contenu SEO en bas de page, début visible et suite sous « Show more », 7 liens internes, FAQ avec balisage FAQPage
+- Contenu SEO en bas de page optimisé dans Corpus (score 84, mot-clé « salon shampoo »), début visible et suite sous « Show more », résumé, tableau par besoin, 7 liens internes, FAQ avec balisage FAQPage
 - Filtres sticky en desktop
 
 Le bouton « SEO mockup: show changes » en bas à gauche affiche les annotations.
