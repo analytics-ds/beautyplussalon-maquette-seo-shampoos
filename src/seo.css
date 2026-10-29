@@ -1,0 +1,73 @@
+/* SEO mockup blocks, styled to match the Hyvä theme (Mulish, pink #ED1A75, gray-600 text) */
+.seo-top { max-width: 960px; margin: 0 auto 1.25rem; text-align: center; }
+.seo-intro { font-size: 1rem; line-height: 1.6rem; color: rgb(75 85 99); }
+.seo-intro strong { color: rgb(17 24 39); font-weight: 600; }
+
+.seo-links { margin: 0 auto 1.25rem; max-width: 1100px; width: 100%; min-width: 0; }
+.seo-links__title { font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: rgb(17 24 39); text-align: center; margin-bottom: .6rem; }
+.seo-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; list-style: none; padding: 0; margin: 0; }
+.seo-chips a { display: inline-block; padding: .45rem .95rem; border: 1px solid rgb(229 231 235); border-radius: 9999px; font-size: .875rem; font-weight: 600; color: rgb(17 24 39); background: #fff; transition: border-color .15s, color .15s; }
+.seo-chips a:hover { border-color: #ED1A75; color: #ED1A75; }
+@media (max-width: 639px) {
+  .seo-chips { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; padding-bottom: .4rem; -webkit-overflow-scrolling: touch; }
+  .seo-chips a { white-space: nowrap; }
+  .seo-intro { font-size: .95rem; line-height: 1.5rem; }
+}
+
+.seo-brands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; list-style: none; padding: 0; margin: 0; }
+@media (min-width: 640px) { .seo-brands { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .seo-brands { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.seo-brands a { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 4.25rem; padding: .6rem .5rem; border: 1px solid rgb(229 231 235); background: #fff; transition: border-color .15s, box-shadow .15s; }
+.seo-brands a:hover { border-color: #ED1A75; box-shadow: 0 2px 10px rgb(0 0 0 / .06); }
+.seo-brands span { font-weight: 800; font-size: .95rem; color: rgb(17 24 39); text-transform: uppercase; letter-spacing: .02em; }
+.seo-brands small { font-size: .72rem; color: rgb(107 114 128); margin-top: .15rem; }
+
+.seo-bottom { margin-top: 2.5rem; margin-bottom: 3rem; }
+.seo-bottom__inner { max-width: 900px; margin: 0 auto; border-top: 1px solid rgb(229 231 235); padding-top: 2rem; color: rgb(75 85 99); font-size: 1rem; line-height: 1.65rem; }
+.seo-bottom h2 { font-size: 1.5rem; line-height: 2rem; font-weight: 700; color: rgb(17 24 39); margin: 2rem 0 .75rem; }
+.seo-bottom h3 { font-size: 1.125rem; line-height: 1.6rem; font-weight: 700; color: rgb(17 24 39); margin: 1.25rem 0 .4rem; }
+.seo-bottom p { margin: 0 0 .75rem; }
+.seo-bottom a { color: #ED1A75; font-weight: 600; }
+.seo-bottom a:hover { color: rgb(255 102 168); }
+.seo-bottom .seo-chips a { color: rgb(17 24 39); font-weight: 600; }
+.seo-bottom .seo-chips a:hover { color: #ED1A75; }
+.seo-links--related { margin-bottom: 1rem; }
+.seo-list { list-style: disc; padding-left: 1.25rem; margin: 0 0 .75rem; }
+.seo-list li { margin-bottom: .35rem; }
+.seo-list strong, .seo-bottom p strong { color: rgb(17 24 39); }
+.seo-faq details { border-bottom: 1px solid rgb(229 231 235); padding: .85rem 0; }
+.seo-faq summary { cursor: pointer; font-weight: 700; color: rgb(17 24 39); list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+.seo-faq summary::-webkit-details-marker { display: none; }
+.seo-faq summary::after { content: "+"; color: #ED1A75; font-size: 1.25rem; line-height: 1; }
+.seo-faq details[open] summary::after { content: "\2212"; }
+.seo-faq details p { margin: .6rem 0 0; }
+
+/* SEO text: beginning visible, rest behind "Show more" (content stays in the HTML) */
+.seo-collapsible { position: relative; max-height: 19rem; overflow: hidden; transition: max-height .3s ease; }
+.seo-collapsible::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6rem; background: linear-gradient(to bottom, rgb(255 255 255 / 0), #fff); pointer-events: none; }
+.seo-collapsible.is-open { max-height: none; }
+.seo-collapsible.is-open::after { display: none; }
+.seo-collapsible > h2:first-child { margin-top: 1.5rem; }
+.seo-more-btn { display: block; margin: 1rem auto 0; padding: .65rem 1.75rem; background: #000; color: #fff; font-weight: 700; font-size: .875rem; letter-spacing: .04em; text-transform: uppercase; border: 0; cursor: pointer; }
+.seo-more-btn:hover { background: #ED1A75; }
+
+/* Sticky filters (desktop): the sidebar follows the scroll under the sticky header */
+@media (min-width: 768px) {
+  .columns > aside.sidebar-main { position: sticky !important; top: var(--seo-sticky-top, 160px); align-self: start; max-height: calc(100vh - var(--seo-sticky-top, 160px) - 16px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+}
+
+/* Product names: former H2, now plain text (same look) */
+.product-item-link .product-name { display: block; }
+
+/* Mockup banner (public version) */
+.seo-mock-banner { background: #ED1A75; color: #fff; text-align: center; font-size: .8rem; line-height: 1.2rem; font-weight: 700; padding: .5rem 1rem; }
+.seo-mock-banner a { color: #fff; text-decoration: underline; }
+
+/* Annotations (toggle) */
+body.seo-show-annot .seo-annot { position: relative; outline: 2px dashed #ED1A75; outline-offset: 6px; }
+body.seo-show-annot .seo-annot::before { content: attr(data-annot); position: absolute; top: -1.9rem; left: 0; z-index: 30; max-width: 100%; background: #111827; color: #fff; font-size: .7rem; line-height: 1rem; font-weight: 600; padding: .25rem .5rem; border-radius: 3px; text-align: left; white-space: normal; }
+body.seo-show-annot .seo-annot { margin-top: 2.5rem; }
+body.seo-show-annot .product-item-link .product-name { outline: 1px dashed #ED1A75; }
+.seo-toggle { position: fixed; left: 16px; bottom: 16px; z-index: 9999; display: flex; align-items: center; gap: .5rem; background: #111827; color: #fff; font: 600 .8rem/1 Mulish, sans-serif; padding: .7rem 1rem; border-radius: 9999px; box-shadow: 0 4px 16px rgb(0 0 0 / .25); cursor: pointer; border: 0; }
+.seo-toggle i { width: .6rem; height: .6rem; border-radius: 9999px; background: #6b7280; display: inline-block; }
+body.seo-show-annot .seo-toggle i { background: #ED1A75; }
