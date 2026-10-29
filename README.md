@@ -1,6 +1,6 @@
 # Beauty Plus Salon, maquette SEO de /hair/shampoos
 
-Maquette datashake de la page catégorie https://www.beautyplussalon.com/hair/shampoos, retravaillée pour le SEO. Ce n'est pas la boutique officielle : formulaires et panier désactivés, page en noindex.
+Maquette datashake de la page catégorie https://www.beautyplussalon.com/hair/shampoos, retravaillée pour le SEO. Formulaires et panier désactivés, page en noindex.
 
 Modifications par rapport à la page live :
 - Title, meta description et H1 retravaillés

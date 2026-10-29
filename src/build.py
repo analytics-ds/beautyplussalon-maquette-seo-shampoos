@@ -84,11 +84,7 @@ faq_ld = {"@context": "https://schema.org", "@type": "FAQPage",
           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
 h = h.replace("</head>", '<script type="application/ld+json">' + json.dumps(faq_ld, ensure_ascii=False) + "</script>\n</head>", 1)
 
-# Public mockup: visible banner, and no working form (login, newsletter, search, add to cart)
-banner = ('<div class="seo-mock-banner" role="note">SEO mockup by datashake for Beauty Plus Salon. '
-          'This is not the official store: forms and cart are disabled. '
-          'Shop on <a href="https://www.beautyplussalon.com/">beautyplussalon.com</a>.</div>')
-h = re.sub(r'(<body[^>]*>)', r'\1' + banner, h, count=1)
+# Public mockup: no working form (login, newsletter, search, add to cart)
 h = re.sub(r'(<form\b[^>]*?)\saction="[^"]*"', r'\1 action="#"', h)
 h = re.sub(r'<form\b', '<form onsubmit="return false"', h)
 h = re.sub(r'<input\b(?=[^>]*type="(?:email|password|text|search|tel)")', '<input disabled', h)
